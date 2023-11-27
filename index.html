@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes </title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="head.css">
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+
+    <div class="title-container">
+        <h1 id="title-text">Desconhecido, o Iniciante</h1>
+    </div>
+    <div class="head-container">
+        <div class="head">
+            <div class="eyes-row">
+                <div class="eye">
+                    <div id="left-pupil">*</div>
+                </div>
+                <div class="eye">
+                    <div id="right-pupil">*</div>
+                </div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+
+    <div class="forms">
+        <div class="outlined-input">
+            <label for="input-name">Nome:</label>
+            <input type="text" name="input-name" id="input-name" value="Desconhecido" onchange="handleUpdate()">
+        </div>
+        <div class="outlined-input">
+            <label for="input-age">Idade:</label>
+            <input type="number" name="input-age" id="input-age" value="0" min="0" onchange="handleUpdate()">
+        </div>
+        <div class="outlined-input">
+            <label for="input-class">Tipo:</label>
+            <select name="input-class" id="input-class" onchange="handleUpdate()">
+                <option value="Iniciante" selected disabled></option>
+                <option value="mage">Mágico</option>
+                <option value="warrior">Guerreiro</option>
+                <option value="monk">Monge</option>
+                <option value="ninja">Ninja</option>
+            </select>
+        </div>
+    </div>
+
+    <button type="button" onclick="handleAttack()">Atacar!</button>
+
+    <ul class="bg-container" id="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+</body>
+
+</html>

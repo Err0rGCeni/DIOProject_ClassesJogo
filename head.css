@@ -1,0 +1,58 @@
+.head-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.head {
+    height: 260px;
+    width: 240px;
+    background-color: yellow;
+    border-radius: 120px;
+}
+
+
+.eyes-row {
+    margin-top: 15%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.eye {
+    background-color: white;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180%;
+    font-weight: bold;
+    aspect-ratio: 1/1;
+}
+
+#left-pupil, #right-pupil {
+    position: relative;
+    height: 40%;
+    width: 40%;
+    text-align: center;
+}
+
+.mouth {
+    width: 80px;
+    height: 40px;
+    border: 2px solid black;
+    border-top: 0px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin: 40px auto;
+    transition: 0.2s;
+}
+
+body:has(button:hover) .mouth {
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
